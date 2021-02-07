@@ -31,7 +31,9 @@ export default {
                 {id:'7',name:'Chainlink',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://i1.wp.com/kriptokoin.com/wp-content/uploads/2020/08/Chainlink.jpg?fit=1200%2C780&ssl=1)'},
                 {id:'8',name:'Binance Coin (BNB)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://www.coinkolik.com/wp-content/uploads/2019/09/Binance-Coin-BNB.jpg)'},
                 {id:'9',name:'Tether (USDT)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://media.cointral.com/wp-content/uploads/sites/2/2019/09/08014322/buy_tether.jpg)'},
-                {id:'10',name:'Monero (XMR)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://uzmancoin.com/wp-content/uploads/2020/10/monero-xmr.jpg)'}
+                {id:'10',name:'Monero (XMR)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://uzmancoin.com/wp-content/uploads/2020/10/monero-xmr.jpg)'},
+                {id:'11',name:'Dogecoin (DOGE)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://iasbh.tmgrup.com.tr/fcbc7f/650/344/0/2/1280/673?u=https://isbh.tmgrup.com.tr/sbh/2021/01/29/dogecoin-nedir-ve-nasil-alinir-dogecoin-kac-tl-oldu-1611901812473.jpg)'},
+                {id:'12',name:'Tether (USDT)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://i.ytimg.com/vi/9j5KqATrr3M/maxresdefault.jpg)'}
             ]
         }
     },
