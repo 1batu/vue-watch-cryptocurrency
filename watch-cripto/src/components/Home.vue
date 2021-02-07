@@ -4,93 +4,14 @@
             <div class='page_container'>
                     <div class="row">
                         
-                        <div class="card_container_sm">
-                        <div class='card card01'>
-                            <div class='card_category'>
-                            HILLARIOUS
+                        <div class="card_container_sm" v-for="c in coins" :key="c.id">
+                            <div class='card card01' :style="c.style">
+                                <div class='card_category'>
+                                    {{c.name}}
+                                </div>
+                                <b-button variant="warning" class="card_button">Detail</b-button>
                             </div>
-                            <div class="card_title">
-                            Is it Hilarious When Women Eat?
                             </div>
-                            <a href='http://cards-ui-kit.webflow.io/' target="_blank" class="card_button">
-                            Explore
-                            </a>
-                        </div>
-                        </div>
-
-                        <div class="card_container_sm">
-                        <div class='card card02'>
-                            <div class='card_category'>
-                            INTRODUCTION
-                            </div>
-                            <div class="card_title">
-                            5 Crazy Recent News Stories
-                            </div>
-                            <a href='http://cards-ui-kit.webflow.io/' target="_blank"  class="card_button">
-                            Explore
-                            </a>
-                        </div>
-                        </div>
-
-                        <div class="card_container_md">
-                        <div class='card card03'>
-                            <div class='card_category dark'>
-                            TRENDING
-                            </div>
-                            <div class="card_title dark">
-                            Alton Attorney Accidentally Sues Himself
-                            </div>
-                            <a href='http://cards-ui-kit.webflow.io/' target="_blank"  class="card_button">
-                            Explore
-                            </a>
-                        </div>
-                        </div>
-                    
-                    </div>
-                    <div class="row">
-                        
-                        <div class="card_container_md">
-                        <div class='card card04'>
-                            <div class='card_category dark'>
-                            RICE ON THE RISE
-                            </div>
-                            <div class="card_title dark">
-                            There's A Rice Deal Out There For Everyone
-                            </div>
-                            <a href='http://cards-ui-kit.webflow.io/' target="_blank"  class="card_button">
-                            Explore
-                            </a>
-                        </div>
-                        </div>
-                        
-                        <div class="card_container_sm">
-                        <div class='card card05'>
-                            <div class='card_category dark'>
-                            SPORT
-                            </div>
-                            <div class="card_title dark">
-                            Tiger Woods plays with own balls, Nike says
-                            </div>
-                            <a href='http://cards-ui-kit.webflow.io/' target="_blank" class="card_button">
-                            Explore
-                            </a>
-                        </div>
-                        </div>
-
-                        <div class="card_container_sm">
-                        <div class='card card06'>
-                            <div class='card_category'>
-                            COMEDY
-                            </div>
-                            <div class="card_title">
-                            Are you Joey from Friends?
-                            </div>
-                            <a href='http://cards-ui-kit.webflow.io/' target="_blank"  class="card_button">
-                            Explore
-                            </a>
-                        </div>
-                        </div>
-                        
                     </div>
             </div>
         </div>
@@ -98,7 +19,22 @@
 </template>
 <script>
 export default {
-    
+    data() {
+        return {
+            coins:[
+                {id:'1',name:'Ethereum (ETH)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://cdn.pixabay.com/photo/2018/09/07/09/10/ethereum-3660218_960_720.jpg)'},
+                {id:'2',name:'Litecoin (LTC)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://lh3.googleusercontent.com/proxy/iitni2U-zacNlq3Qa8N2-ml4NlL3yyRjS2rKZKuAyj0NbcWk2B1Ch09XsyOMbg7OPhz5UI3tYPSlRFZJJPww-CfptBj2AlWd3BsnWF1bTi4ms2Yn0l6c)'},
+                {id:'3',name:'Cardano (ADA)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://www.coinkolik.com/wp-content/uploads/2021/02/cardano-ada.jpg)'},
+                {id:'4',name:'Polkadot (DOT)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://i2.wp.com/kriptokoin.com/wp-content/uploads/2020/08/polkadot-sale-1200x675-1.jpg?fit=770%2C433&ssl=1)'},
+                {id:'5',name:'Bitcoin Cash (BCH)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://www.webtekno.com/images/editor/default/0002/56/fd60c6c5a3a4cb487677fcbb8d884f5fa883ec94.jpeg)'},
+                {id:'6',name:'Stellar (XLM)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://stormgain.com/sites/default/files/news/Stellar%20Currency.jpg)'},
+                {id:'7',name:'Chainlink',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://i1.wp.com/kriptokoin.com/wp-content/uploads/2020/08/Chainlink.jpg?fit=1200%2C780&ssl=1)'},
+                {id:'8',name:'Binance Coin (BNB)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://www.coinkolik.com/wp-content/uploads/2019/09/Binance-Coin-BNB.jpg)'},
+                {id:'9',name:'Tether (USDT)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://media.cointral.com/wp-content/uploads/sites/2/2019/09/08014322/buy_tether.jpg)'},
+                {id:'10',name:'Monero (XMR)',style:'background-color:rgba(54, 25, 25, .00004);background-image: url(https://uzmancoin.com/wp-content/uploads/2020/10/monero-xmr.jpg)'}
+            ]
+        }
+    },
 }
 </script>
 <style scoped>
@@ -132,37 +68,6 @@ export default {
 }
 .card01{
   position: relative;
-  background-image: url(https://uploads-ssl.webflow.com/5ae109486d7b6097d347f1e3/5ae2268b7ceab455294d32b6_card1.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.card02{
-  position: relative;
-  background-image: url(https://uploads-ssl.webflow.com/5ae109486d7b6097d347f1e3/5ae2277ea95a89eb5b5d830e_card2.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.card03{
-  position: relative;
-  background-image: url(https://uploads-ssl.webflow.com/5ae109486d7b6097d347f1e3/5ae22b2a0663562314f7915f_card3.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.card04{
-  position: relative;
-  background-image: url(https://uploads-ssl.webflow.com/5ae109486d7b6097d347f1e3/5ae22e9c7ceab419284d3b61_card4%402x.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.card05{
-  position: relative;
-  background-image: url(https://uploads-ssl.webflow.com/5ae109486d7b6097d347f1e3/5ae22ea0a95a897b235d8bfa_card5%402x.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.card06{
-  position: relative;
-  background-image: url(https://uploads-ssl.webflow.com/5ae109486d7b6097d347f1e3/5ae22ea17b3f60de35084890_card6%402x.jpg);
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -197,13 +102,8 @@ export default {
   padding-bottom: 9px;
   padding-left: 25px;
   padding-right: 25px;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #fff;
   font-size: 14px;
   font-weight: 400;
-  text-decoration: none;
-  color: #333;
 }
 .card_button:active{
   color: #333;
